@@ -10,6 +10,8 @@
 		B5859B54213D9B7F00C71222 /* PinkGoatPhysics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5859B4A213D9B7F00C71222 /* PinkGoatPhysics.framework */; };
 		B5859B59213D9B7F00C71222 /* PinkGoatPhysicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859B58213D9B7F00C71222 /* PinkGoatPhysicsTests.swift */; };
 		B5859B5B213D9B7F00C71222 /* PinkGoatPhysics.h in Headers */ = {isa = PBXBuildFile; fileRef = B5859B4D213D9B7F00C71222 /* PinkGoatPhysics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5859B68213D9C3500C71222 /* PGVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859B67213D9C3500C71222 /* PGVector3.swift */; };
+		B5859B6A213DE23E00C71222 /* PGVector3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859B69213DE23E00C71222 /* PGVector3Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		B5859B53213D9B7F00C71222 /* PinkGoatPhysicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinkGoatPhysicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5859B58213D9B7F00C71222 /* PinkGoatPhysicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkGoatPhysicsTests.swift; sourceTree = "<group>"; };
 		B5859B5A213D9B7F00C71222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5859B67213D9C3500C71222 /* PGVector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGVector3.swift; sourceTree = "<group>"; };
+		B5859B69213DE23E00C71222 /* PGVector3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGVector3Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		B5859B4C213D9B7F00C71222 /* PinkGoatPhysics */ = {
 			isa = PBXGroup;
 			children = (
+				B5859B64213D9BAE00C71222 /* Math */,
 				B5859B4D213D9B7F00C71222 /* PinkGoatPhysics.h */,
 				B5859B4E213D9B7F00C71222 /* Info.plist */,
 			);
@@ -82,8 +87,17 @@
 			children = (
 				B5859B58213D9B7F00C71222 /* PinkGoatPhysicsTests.swift */,
 				B5859B5A213D9B7F00C71222 /* Info.plist */,
+				B5859B69213DE23E00C71222 /* PGVector3Tests.swift */,
 			);
 			path = PinkGoatPhysicsTests;
+			sourceTree = "<group>";
+		};
+		B5859B64213D9BAE00C71222 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				B5859B67213D9C3500C71222 /* PGVector3.swift */,
+			);
+			path = Math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +162,7 @@
 				TargetAttributes = {
 					B5859B49213D9B7F00C71222 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					B5859B52213D9B7F00C71222 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5859B68213D9C3500C71222 /* PGVector3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5859B59213D9B7F00C71222 /* PinkGoatPhysicsTests.swift in Sources */,
+				B5859B6A213DE23E00C71222 /* PGVector3Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +355,7 @@
 		B5859B5F213D9B7F00C71222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -357,6 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pinkgoat.PinkGoatPhysics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -364,6 +383,7 @@
 		B5859B60213D9B7F00C71222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -390,6 +410,7 @@
 		B5859B62213D9B7F00C71222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Q273YZ238V;
@@ -408,6 +429,7 @@
 		B5859B63213D9B7F00C71222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = Q273YZ238V;
