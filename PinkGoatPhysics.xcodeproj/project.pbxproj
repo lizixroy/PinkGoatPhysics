@@ -12,6 +12,8 @@
 		B5859B5B213D9B7F00C71222 /* PinkGoatPhysics.h in Headers */ = {isa = PBXBuildFile; fileRef = B5859B4D213D9B7F00C71222 /* PinkGoatPhysics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5859B68213D9C3500C71222 /* PGVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859B67213D9C3500C71222 /* PGVector3.swift */; };
 		B5859B6A213DE23E00C71222 /* PGVector3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859B69213DE23E00C71222 /* PGVector3Tests.swift */; };
+		B5859CA02140F00F00C71222 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859C9F2140F00F00C71222 /* Particle.swift */; };
+		B5859CA221417E2A00C71222 /* ParticleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859CA121417E2A00C71222 /* ParticleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		B5859B5A213D9B7F00C71222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5859B67213D9C3500C71222 /* PGVector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGVector3.swift; sourceTree = "<group>"; };
 		B5859B69213DE23E00C71222 /* PGVector3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGVector3Tests.swift; sourceTree = "<group>"; };
+		B5859C9F2140F00F00C71222 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
+		B5859CA121417E2A00C71222 /* ParticleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 				B5859B64213D9BAE00C71222 /* Math */,
 				B5859B4D213D9B7F00C71222 /* PinkGoatPhysics.h */,
 				B5859B4E213D9B7F00C71222 /* Info.plist */,
+				B5859C9F2140F00F00C71222 /* Particle.swift */,
 			);
 			path = PinkGoatPhysics;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 				B5859B58213D9B7F00C71222 /* PinkGoatPhysicsTests.swift */,
 				B5859B5A213D9B7F00C71222 /* Info.plist */,
 				B5859B69213DE23E00C71222 /* PGVector3Tests.swift */,
+				B5859CA121417E2A00C71222 /* ParticleTests.swift */,
 			);
 			path = PinkGoatPhysicsTests;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5859B68213D9C3500C71222 /* PGVector3.swift in Sources */,
+				B5859CA02140F00F00C71222 /* Particle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5859CA221417E2A00C71222 /* ParticleTests.swift in Sources */,
 				B5859B59213D9B7F00C71222 /* PinkGoatPhysicsTests.swift in Sources */,
 				B5859B6A213DE23E00C71222 /* PGVector3Tests.swift in Sources */,
 			);
