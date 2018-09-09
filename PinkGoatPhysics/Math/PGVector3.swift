@@ -103,6 +103,7 @@ extension PGVector3 {
             z: lhs.z - rhs.z)
     }
     
+    // Dot product or scalar product
     static func *(lhs: PGVector3, rhs: PGVector3) -> Double {
         return lhs.x * rhs.x + lhs.y * rhs.y + lhs.z * rhs.z
     }
