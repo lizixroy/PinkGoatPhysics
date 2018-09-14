@@ -13,6 +13,7 @@
 		B526B071214230C400FBA6D7 /* MockParticleForceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526B070214230C400FBA6D7 /* MockParticleForceGenerator.swift */; };
 		B526B14E2145753C00FBA6D7 /* ParticleContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526B14D2145753C00FBA6D7 /* ParticleContact.swift */; };
 		B526B1502147865F00FBA6D7 /* ParticleContactResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526B14F2147865F00FBA6D7 /* ParticleContactResolver.swift */; };
+		B526B23D214B725B00FBA6D7 /* PGMatrix3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526B23C214B725B00FBA6D7 /* PGMatrix3.swift */; };
 		B5859B54213D9B7F00C71222 /* PinkGoatPhysics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5859B4A213D9B7F00C71222 /* PinkGoatPhysics.framework */; };
 		B5859B59213D9B7F00C71222 /* PinkGoatPhysicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5859B58213D9B7F00C71222 /* PinkGoatPhysicsTests.swift */; };
 		B5859B5B213D9B7F00C71222 /* PinkGoatPhysics.h in Headers */ = {isa = PBXBuildFile; fileRef = B5859B4D213D9B7F00C71222 /* PinkGoatPhysics.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +40,7 @@
 		B526B070214230C400FBA6D7 /* MockParticleForceGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockParticleForceGenerator.swift; sourceTree = "<group>"; };
 		B526B14D2145753C00FBA6D7 /* ParticleContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleContact.swift; sourceTree = "<group>"; };
 		B526B14F2147865F00FBA6D7 /* ParticleContactResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleContactResolver.swift; sourceTree = "<group>"; };
+		B526B23C214B725B00FBA6D7 /* PGMatrix3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGMatrix3.swift; sourceTree = "<group>"; };
 		B5859B4A213D9B7F00C71222 /* PinkGoatPhysics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PinkGoatPhysics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5859B4D213D9B7F00C71222 /* PinkGoatPhysics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinkGoatPhysics.h; sourceTree = "<group>"; };
 		B5859B4E213D9B7F00C71222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				B5859B67213D9C3500C71222 /* PGVector3.swift */,
+				B526B23C214B725B00FBA6D7 /* PGMatrix3.swift */,
 			);
 			path = Math;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				B5859B68213D9C3500C71222 /* PGVector3.swift in Sources */,
 				B526B14E2145753C00FBA6D7 /* ParticleContact.swift in Sources */,
+				B526B23D214B725B00FBA6D7 /* PGMatrix3.swift in Sources */,
 				B526B0692142262F00FBA6D7 /* ParticleForceGeneratorProtocol.swift in Sources */,
 				B526B06C2142270A00FBA6D7 /* ParticleForceRegistry.swift in Sources */,
 				B526B1502147865F00FBA6D7 /* ParticleContactResolver.swift in Sources */,
